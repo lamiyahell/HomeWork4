@@ -159,20 +159,18 @@ public class Main { public static void main(String[] args) {
 
             //task 7
             System.out.println("Задача 7");
-            for (int d = 7; d <= 31; d++) {
-                if (d % 7 == 0) {
+            for (int d = 3; d <= 31; d = d + 7) {
                     System.out.println("Сегодня пятница, " + d + "-е число. Необходимо подготовить отчет.");
-                    continue;
-                    }
                 }
 
             //task 8
             System.out.println("Задача 8");
-            int finish = 2123;
-            for (int start = 1817; start < finish; start++) {
-                if (start % 79 == 0) {
-                    System.out.println(start);
-                    continue;
+            int yearNow = 2023;
+            int yearStart = yearNow - 200;
+            int yearFinish = yearNow + 100;
+            for (int comet = 0; comet < yearFinish; comet = comet + 79) {
+                if (comet > yearStart) {
+                    System.out.println(comet);
                     }
                 }
             }
